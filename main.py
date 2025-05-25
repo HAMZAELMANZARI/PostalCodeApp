@@ -23,7 +23,7 @@ def add_postal_code():
 
     user_id = input("Enter User id: ").capitalize().strip()
 
-    if len(user_id) > 1:
+    if len(user_id) < 1:
 
         print("Enter argument")
 
@@ -142,7 +142,9 @@ def run():
 
         print("Invalid Not Found!")
 
-run()
+if __name__ == "__main__":
+
+    run()
 
 
 
